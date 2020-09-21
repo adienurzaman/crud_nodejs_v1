@@ -98,6 +98,10 @@ app.post("/delete", (req, res) => {
   });
 });
 
+app.get("/json", (req, res) => {
+  res.json({ data: "Yes" });
+});
+
 //server listening
 app.listen(8000, () => {
   console.log("Server is running at port 8000");
